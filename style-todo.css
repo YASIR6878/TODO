@@ -1,0 +1,81 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 34px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+    text-align: center;
+}
+
+.inputtext,
+.datefield {
+    padding: 10px;
+}
+
+.datefield {
+    padding: 9px;
+}
+
+.addbutton, .deletebutton {
+    padding: 10px;
+    background-color: green;
+    color: black;
+    font-weight: bold;
+    border: none;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.todogrid{
+    display: grid;
+    grid-template-columns: 100px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.todogrid {
+    color: white;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 183px 107px 86px;
+    column-gap: 18px;
+    row-gap: 10px;
+}
+
+.info > div {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    color: aqua;
+}
+.deletebutton{
+    background-color: yellow;
+}
+.alltodo{
+ display: flex;
+ justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .inputtext,.datefield{
+    width: 107px;
+  }
+  .info {
+    display: grid;
+    grid-template-columns: 131px 130px 86px;
+    column-gap: 4px;
+    row-gap: 10px;
+}
+
+}
